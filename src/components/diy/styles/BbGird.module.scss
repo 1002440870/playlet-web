@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    .top_label {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left {
+            color: #333;
+            font-family: Roboto;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        .right {
+            width: 58px;
+            height: 24px;
+            border-radius: 12px;
+            border: 1px solid #D9D9D9;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .more_text {
+                color: #333;
+                font-family: PingFang SC;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-transform: capitalize;
+                margin-right: 3px;
+            }
+
+            .more_icon {
+                width: 6px;
+                height: 9px;
+            }
+        }
+    }
+}
