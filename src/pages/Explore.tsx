@@ -15,7 +15,7 @@ const Explore = () => {
     const [hasStar, setHasStar] = useState(false);
     const shareRef: any = useRef(undefined);
     const [playPercent, setPlayPercent] = useState(0);
-    const [hasPaused, setHasPaused] = useState(false);
+    const [hasPaused, setHasPaused] = useState(true);
 
     const shareVideo = (event: any) => {
         event.stopPropagation();
@@ -46,11 +46,10 @@ const Explore = () => {
                 <VideoPlayer
                     className={styles.video_container}
                     src={"https://res.goodreels.com/mts/books/092/31000571092/227602/1f28743419d92cbaa8d9ff01100dc62a.mp4"}
-                    poster={require("@/assets/video/02.jpg")}
                     controls={false}
                     autoplay={true}
-                    loop={true}
-                    muted={true}
+                    loop={false}
+                    muted={false}
                     onMounted={(event) => onVideoMounted(event)}
                     volume={0.6}
                     onTimeUpdate={(event: any) => onTimeUpdate(event)}
