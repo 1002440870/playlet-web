@@ -17,6 +17,14 @@ const BbGird = (props: BbGirdProps) => {
                     <Image src={require("@/assets/more_icon.png")} className={styles.more_icon} />
                 </div>
             </div>
+            <div className={styles.gird_view}>
+                {Array.from(Array(count)).map((item, index) => (
+                    <div key={index} className={styles.gird_card}>
+                        <Image src={require("@/assets/cover.png")} className={styles.gird_images} />
+                        <div className={styles.grid_text}>The Conliacl my galher made made mademademademademademademade</div>
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }

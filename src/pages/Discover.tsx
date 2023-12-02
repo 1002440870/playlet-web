@@ -23,7 +23,9 @@ const Discover = () => {
         <PageLayout>
             <div className={styles.container}>
                 <SearchNav />
-                <DiyPage />
+                <div className={styles.diy_page_view}>
+                    <DiyPage />
+                </div>
             </div>
         </PageLayout>
     )

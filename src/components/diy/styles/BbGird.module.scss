@@ -1,6 +1,7 @@
 .container {
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 
     .top_label {
         display: flex;
@@ -40,6 +41,41 @@
                 width: 6px;
                 height: 9px;
             }
+        }
+    }
+}
+
+
+.gird_view {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+
+    .gird_card {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+
+        .grid_text {
+            width: 110px;
+            color: #101010;
+            font-family: PingFang SC;
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 3px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+        }
+
+        .gird_images {
+            width: 110px;
+            height: 150px;
+            border-radius: 8.87px;
         }
     }
 }
