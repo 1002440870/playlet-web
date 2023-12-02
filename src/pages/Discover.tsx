@@ -10,14 +10,13 @@ const SearchNav = () => {
             <Image src={require("@/assets/fictop.png")} className={styles.logo} />
             <div className={styles.search_area}>
                 <Image src={require("@/assets/search.png")} className={styles.search_icon} />
-                <div className={styles.text}>Search some video....</div>
+                <div className={styles.text}>search some video....</div>
             </div>
         </div>
     )
 }
 
 const Discover = () => {
-
 
     return (
         <PageLayout>

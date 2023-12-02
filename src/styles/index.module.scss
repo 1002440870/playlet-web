@@ -5,12 +5,12 @@ body {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #fff;
+    background-color: #000;
     color: #333;
 }
 
 :root:root {
-    --my-primary-color: #FF84A9;
+    --my-primary-color: #fff;
     --my-button-color: linear-gradient(90deg, #FF504F 0%, #EC04D5 97.14%);
     --my-shadow: 0 0px 16px -8px rgba(0, 0, 0, 0.48), 0 0px 28px 0 rgba(0, 0, 0, 0.1),
         0 0px 48px 16px rgba(0, 0, 0, 0.03);

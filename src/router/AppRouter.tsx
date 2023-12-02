@@ -6,7 +6,7 @@ import vConsole from "vconsole";
 import { AliveScope } from 'react-activation';
 import styles from "@/styles/App.module.scss";
 
-new vConsole({ theme: "dark" });
+// new vConsole({ theme: "dark" });
 
 const AppRouter = () => {
     const { screens } = useScreens();

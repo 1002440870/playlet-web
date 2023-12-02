@@ -1,0 +1,155 @@
+.container {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: relative;
+}
+
+.video_container {
+    width: 100%;
+    height: 100%;
+
+    video {
+        object-fit: cover;
+    }
+}
+
+.video_area {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 14px;
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .video_name {
+            text-align: center;
+            color: #fff;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        .video_num {
+            text-align: center;
+            color: #fff;
+            font-family: Roboto;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+
+        .list_item {
+            margin-top: 20px;
+
+            .icon_item {
+                width: 32px;
+                height: 32px;
+            }
+
+            .icon_number {
+                text-align: center;
+                color: #fff;
+                font-family: Roboto;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+            }
+        }
+
+
+    }
+}
+
+.time_line {
+    height: 3px;
+    border-radius: 12px;
+    background-color: #343435;
+    margin: 10px 14px 0px 14px;
+    position: relative;
+
+    .time_current {
+        height: 3px;
+        border-radius: 12px;
+        background-color: #acacac;
+        position: absolute;
+        left: 0;
+    }
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    background-color: aqua;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+
+    .bottom_left {
+        display: flex;
+        align-items: center;
+
+        .more_video_text {
+            text-align: center;
+            color: #fff;
+            font-family: Roboto;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        .more_video {
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    .video_more {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+.play_view {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .play_icon {
+        width: 180px;
+        height: 100px;
+    }
+}
+
+.hide_play_view {
+    z-index: -1;
+}

@@ -1,0 +1,140 @@
+.container {
+    height: 310px;
+    background-color: #fff;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    display: flex;
+    flex-direction: column;
+
+    .top_view {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .top_border {
+            width: 30px;
+            height: 5px;
+            border-radius: 10px;
+            background-color: #cdcdce;
+            margin-top: 10px;
+        }
+
+        .top_title {
+            color: #000;
+            text-align: center;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+    }
+
+    .content {
+        height: 150px;
+        margin: 15px;
+
+        .copy_text {
+            background-color: #f3f4f5;
+            color: #000;
+            font-family: Roboto;
+            border-radius: 10px;
+            font-size: 14px;
+            font-style: normal;
+            padding: 14px;
+        }
+    }
+
+}
+
+.copy_btn {
+    margin: 0 15px;
+    height: 35px;
+    background-color: #212223;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    border-radius: 16px;
+
+    .copy_icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .copy_btn_text {
+        color: #fff;
+        font-family: Roboto;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+}
+
+.facebook {
+    width: 48px;
+    height: 48px;
+}
+
+.whatsapp {
+    width: 48px;
+    height: 48px;
+}
+
+.messenger {
+    width: 48px;
+    height: 48px;
+}
+
+.sms {
+    width: 32px;
+    height: 32px;
+
+}
+
+.other {
+    width: 32px;
+    height: 32px;
+}
+
+.share_icon_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    .share_text {
+        color: #626c80;
+        font-family: Roboto;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 3px;
+    }
+}
+
+.share_method_view {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.smsBg {
+    background-color: #ff8235;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.otherBg {
+    background-color: #f0f1f3;
+    border-radius: 50%;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+}

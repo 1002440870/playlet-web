@@ -13,8 +13,7 @@ const BbGird = (props: BbGirdProps) => {
             <div className={styles.top_label}>
                 <div className={styles.left}>Editor's Picks</div>
                 <div className={styles.right}>
-                    <div className={styles.more_text}>more</div>
-                    <Image src={require("@/assets/more_icon.png")} className={styles.more_icon} />
+                    <Image src={require("@/assets/more.png")} className={styles.more_icon} />
                 </div>
             </div>
             <div className={styles.gird_view}>

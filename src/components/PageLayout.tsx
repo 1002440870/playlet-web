@@ -4,7 +4,7 @@ import styles from "./styles/PageLayout.module.scss";
 type PageLayoutProps = {
     children: any, // 子元素
     header?: any, // 自定义头部内容
-    loading?: boolean, // 是否加载
+    loading?: boolean, // 是否加载  
 }
 
 const PageLayout = (props: PageLayoutProps) => {

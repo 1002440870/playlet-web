@@ -2,6 +2,8 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 import { resolve } from 'path';
 import requireTransform from 'vite-plugin-require-transform';
+import autoprefixer from 'autoprefixer';
+import postCssPxToRem from 'postcss-pxtorem';
 
 export default defineConfig({
   plugins: [

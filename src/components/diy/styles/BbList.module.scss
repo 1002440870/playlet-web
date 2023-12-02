@@ -28,22 +28,24 @@
     }
 }
 
-
-.gird_view {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.walf_view {
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
-    .gird_card {
+    .walf_card {
         display: flex;
         flex-direction: column;
         margin-top: 10px;
-        justify-content: center;
-        align-items: center;
 
-        .grid_text {
-            width: 112px;
+        .walf_images {
+            width: 172px;
+            height: 220px;
+        }
+
+        .walf_text {
+            width: 172px;
             color: #fff;
             font-family: PingFang SC;
             font-size: 14px;
@@ -53,12 +55,6 @@
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 2;
             overflow: hidden;
-        }
-
-        .gird_images {
-            width: 112px;
-            height: 150px;
-            border-radius: 8.87px;
         }
     }
 }

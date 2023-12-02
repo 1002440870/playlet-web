@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './styles/index.module.scss'
-// import 'amfe-flexible'
+import 'amfe-flexible'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(<App />)
