@@ -1,6 +1,8 @@
 import { Fragment } from "react";
 import styles from "./styles/PageLayout.module.scss";
 import Navigation from "./Navigation";
+import PageLoading from "./PageLoading";
+import classNames from "classnames";
 
 type PageLayoutProps = {
     children: any, // 子元素
@@ -8,6 +10,7 @@ type PageLayoutProps = {
     loading?: boolean, // 是否加载  
     hideHeader?: boolean, // 隐藏头部
     title?: string, // 标题头
+    className?: any, // 页面样式
 }
 
 const PageHeader = ({ hideHeader, header, title }: any) => {
@@ -17,10 +20,12 @@ const PageHeader = ({ hideHeader, header, title }: any) => {
 }
 
 const PageLayout = (props: PageLayoutProps) => {
-    const { children, loading, header, hideHeader, title } = props;
+    const { children, loading, header, hideHeader, title, className } = props;
+
+    if (loading) return <PageLoading />;
 
     return (
-        <div className={styles.container}>
+        <div className={classNames(styles.container, className)}>
             <PageHeader
                 hideHeader={hideHeader}
                 header={header}

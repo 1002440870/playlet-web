@@ -1,0 +1,163 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(145deg, rgba(253, 237, 224, 0.40) 3.52%, rgba(250, 231, 250, 0.40) 41.49%, rgba(241, 239, 252, 0.32) 90.44%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.login_box {
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    .logo_icon {
+        width: 98px;
+        height: 46px;
+    }
+
+    .explain {
+        color: #F9367E;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Roboto;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        text-transform: capitalize;
+        margin-top: 10px;
+    }
+}
+
+.login_method_list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+
+    .login_btn {
+        width: 259px;
+        height: 48px;
+        display: flex;
+        border-radius: 25px;
+        align-items: center;
+        position: relative;
+        margin-bottom: 15px;
+
+        .loginButtonIcon {
+            width: 32px !important;
+            height: 32px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+
+        .login_text {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+            margin-left: 10px;
+        }
+    }
+
+}
+
+.google_styles {
+    background-color: #34A853;
+}
+
+.facebook_styles {
+    background-color: #335AE2;
+}
+
+.apple_styles {
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #000;
+}
+
+.google_styles_icon {
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.facebook_styles_icon {
+    color: #335ae2;
+    align-items: center;
+    background: #fff;
+    border-radius: 100%;
+    color: #335ae2;
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    height: 32px;
+    justify-content: center;
+    width: 32px !important;
+    margin-left: 10px;
+}
+
+.apple_styles_icon {
+    align-items: center;
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    margin-left: 10px;
+    overflow: hidden;
+    font-size: 48px;
+}
+
+.apple_text {
+    color: #222 !important;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.agreement_view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+    .label_text {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        .text {
+            color: #F9A0AC;
+            text-align: center;
+            font-family: Roboto;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.24px;
+        }
+
+        .text2 {
+            color: var(---, #F9367E);
+            font-family: Roboto;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: -0.24px;
+            text-decoration-line: underline;
+            margin-left: 5px;
+        }
+    }
+}

@@ -6,7 +6,7 @@ import classNames from "classnames";
 import styles from "@/styles/TabRoutes.module.scss";
 import { useState } from "react";
 import { useUpdateEffect } from "ahooks";
-import KeepAlive from "react-activation";
+import { useTranslation } from "react-i18next";
 
 const TabRoutes = () => {
     const { pathname } = useLocation();
@@ -46,13 +46,11 @@ const TabRoutes = () => {
     }, [pathname]);
 
     return (
-        <KeepAlive name={"tabber_container"} key={"tabber_container"} cacheKey={"tabber_container"}>
-            <div className={classNames(styles.footer, homeTabs[tabBarIndex].tabStyle)}>
-                <TabBar activeKey={pathname} onChange={(value) => navigate(value)} className={styles.tabBar}>
-                    {homeTabs.map((item: any) => <TabBar.Item {...item} />)}
-                </TabBar>
-            </div>
-        </KeepAlive>
+        <div className={classNames(styles.footer, homeTabs[tabBarIndex].tabStyle)}>
+            <TabBar activeKey={pathname} onChange={(value) => navigate(value)} className={styles.tabBar}>
+                {homeTabs.map((item: any) => <TabBar.Item {...item} />)}
+            </TabBar>
+        </div>
     )
 }
 

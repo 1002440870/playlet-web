@@ -1,0 +1,326 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 0 14px;
+    background: linear-gradient(175deg, #FDEDE0 4.38%, #FAE7FA 33.96%, #F1EFFC 64.65%, rgba(241, 239, 252, 0.00) 94.55%);
+}
+
+.navbar {
+    background: #FDEDE0;
+}
+
+.title {
+    color: #333333;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.4px;
+}
+
+.historys_btn {
+    color: #333;
+    text-align: right;
+    font-family: PingFang HK;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.28px;
+}
+
+.daily_check_in {
+    position: relative;
+
+    .text {
+        color: #FDFAEC;
+        font-family: PingFang SC;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.32px;
+    }
+
+    .border {
+        width: 121.393px;
+        height: 7.071px;
+        border-radius: 32.767px;
+        background: #FF7212;
+    }
+}
+
+.sign_bg {
+    width: 688px;
+    height: 249px;
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+}
+
+.sign_money_view {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .money_left {
+        display: flex;
+        align-items: center;
+
+        .coins {
+            width: 32px;
+            height: 32px;
+        }
+
+        .coins_text {
+            color: #FF7823;
+            text-align: center;
+            font-family: Roboto;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+    .money_right {
+        width: 24px;
+        height: 24px;
+    }
+
+
+}
+
+
+
+.sign_view {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 2px 5px 0px rgba(255, 187, 187, 0.10);
+    padding: 10px 17px;
+    margin-top: 15px;
+
+    .sign_view_top {
+        color: #000;
+        font-family: PingFang SC;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .sign_view_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 12px;
+
+        .sign_cards {
+            width: 70px;
+            height: 70px;
+            background-color: #fef7fa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 10px;
+            border-radius: 7px;
+            overflow: hidden;
+
+            .top_days {
+                width: 100%;
+                height: 19px;
+                background-color: rgba(#F9367E, 0.2);
+                color: var(---, #F9367E);
+                text-align: center;
+                font-family: PingFang HK;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                text-transform: capitalize;
+            }
+
+            .icon {
+                width: 27.253px;
+                height: 27.173px;
+                margin: 2px 0;
+            }
+
+            .amount {
+                color: var(---, #F9367E);
+                text-align: center;
+                font-family: PingFang HK;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+.sign_more_cards {
+    width: 151px !important;
+    height: 70px !important;
+
+    .icon_view {
+        display: flex;
+        margin: 4px 0;
+
+        .icon {
+            width: 31px !important;
+            height: 19px !important;
+        }
+
+        .count {
+            color: var(---, #F9367E);
+            font-size: 16px;
+            font-weight: 700;
+            margin-left: 5px;
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+}
+
+.sign_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+
+    .sign_btn_text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        width: 313px;
+        height: 48px;
+        background: var(---, linear-gradient(90deg, #FF504F 0%, #EC04D5 97.14%));
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.36px;
+    }
+}
+
+.explain {
+    color: #999;
+    font-family: PingFang SC;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4px;
+}
+
+.ad_banner {
+    height: 75px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.dayily_bouns {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 2px 5px 0px rgba(255, 187, 187, 0.10);
+    padding: 0 16px;
+
+    .dayily_bouns_top {
+        color: #000;
+        font-family: PingFang SC;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding-top: 16px;
+    }
+
+    .dayily_bouns_content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+
+        .dayily_bouns_cards {
+            border-radius: 8px;
+            background: #F9F8FD;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            margin-bottom: 10px;
+
+            .cards_left {
+                display: flex;
+                flex-direction: column;
+
+                .top {
+                    color: #333;
+                    font-family: PingFang SC;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+
+                .bottom {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 5px;
+
+                    .cards_icon {
+                        width: 24.071px;
+                        height: 24px;
+                    }
+
+                    .cards_text {
+                        color: #FF7823;
+                        text-align: center;
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        margin-left: 5px;
+                    }
+                }
+            }
+
+            .success_btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 20px;
+                width: 100px;
+                height: 36px;
+                color: #FFF;
+                text-align: center;
+                font-family: PingFang HK;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: -0.3px;
+                background: var(---, linear-gradient(90deg, #FF504F 0%, #EC04D5 97.14%));
+            }
+        }
+    }
+}

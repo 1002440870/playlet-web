@@ -5,6 +5,8 @@ import SCREEN from "@/utils/router";
 import { Image } from "antd-mobile";
 
 const MemberInfo = () => {
+    const { navigate } = useRouteNavigate();
+
     return (
         <div className={styles.user_view}>
             <div className={styles.user_left}>
@@ -14,7 +16,7 @@ const MemberInfo = () => {
                     <div className={styles.member_id}>UID: 000000</div>
                 </div>
             </div>
-            <div className={styles.sign_btn}>
+            <div className={styles.sign_btn} onClick={() => navigate(SCREEN.Login)}>
                 <div className={styles.sign_text}>Sign in</div>
             </div>
         </div>
@@ -22,22 +24,24 @@ const MemberInfo = () => {
 }
 
 const RechangeCard = () => {
+    const { navigate } = useRouteNavigate();
+
     return (
         <div className={styles.rechange_view}>
             <div className={styles.top_label}>
                 <div className={styles.top_left}>My Wallet</div>
-                <div className={styles.top_right}>
+                {/* <div className={styles.top_right}>
                     <div className={styles.more_text}>Detail</div>
                     <Image className={styles.more_icon} src={require("@/assets/more.png")} />
-                </div>
+                </div> */}
             </div>
             <div className={styles.money_view}>
                 <div className={styles.money_left}>
                     <Image src={require("@/assets/me_coin.png")} className={styles.me_coin} />
                     <div className={styles.money}>10000</div>
                 </div>
-                <div className={styles.rechange_btn}>
-                    <div className={styles.rechange_text}>Refill</div>
+                <div className={styles.rechange_btn} onClick={() => navigate(SCREEN.Pay)}>
+                    <div className={styles.rechange_text}>Top Up</div>
                 </div>
             </div>
         </div>
@@ -66,13 +70,13 @@ const MenuList = () => {
             path: SCREEN.Feedback,
         },
         {
-            title: "Language",
+            title: "Languages",
             icon: require("@/assets/language.png"),
             className: styles.language,
-            path: "",
+            path: SCREEN.Language,
         },
         {
-            title: "Setting",
+            title: "Settings",
             icon: require("@/assets/setting.png"),
             className: styles.setting,
             path: SCREEN.Setting

@@ -9,7 +9,10 @@ const SCREEN = {
     Sign: "/sign",
     Feedback: "/feedback",
     Setting: "/setting",
-    Details: "/details"
+    Details: "/details",
+    Login: "/login",
+    Pay: "/pay",
+    Language: "/language",
 }
 
 export default SCREEN;

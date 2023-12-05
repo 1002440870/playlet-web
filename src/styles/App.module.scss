@@ -17,6 +17,7 @@
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
   color: #333;
 
   code {
@@ -42,6 +43,7 @@
     --border-bottom: none !important;
     --border-inner: none !important;
   }
+
 
 
 }
@@ -84,10 +86,9 @@ input {
 }
 
 .adm-center-popup-body.adm-dialog-body {
-  background: #333 !important;
+  background: #fff !important;
 }
 
-// 设置选中的颜色
 .ant-checkbox-checked .ant-checkbox-inner,
 .ant-checkbox-indeterminate .ant-checkbox-inner {
   background-color: var(--adm-color-primary) !important;
@@ -96,4 +97,8 @@ input {
 
 .ant-checkbox-checked::after {
   border: none !important;
+}
+
+.adm-nav-bar-back {
+  margin-right: var(0) !important;
 }

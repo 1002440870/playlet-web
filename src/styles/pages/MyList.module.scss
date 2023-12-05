@@ -1,0 +1,185 @@
+.container {
+    width: 100%;
+    height: calc(100% - 64px);
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.top_navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    padding: 0 10px;
+    height: 45px;
+    background-color: #fff;
+
+    .tabs_view {
+        --fixed-active-line-width: 20px;
+        --active-line-height: 4px;
+        --active-title-color: #222;
+        --active-line-color: #F9367E;
+        --adm-color-border: "#fff";
+        color: #999;
+    }
+
+    .menu_icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.content {
+    width: 100%;
+    height: calc(100% - 64px);
+    margin-top: 55px;
+    margin-bottom: 80px;
+    padding: 0 12px;
+}
+
+.play_List_cards {
+    display: flex;
+    flex-direction: column;
+
+    .cards {
+        display: flex;
+        margin-bottom: 10px;
+
+        .cover_images {
+            width: 89.446px;
+            height: 119.858px;
+            border-radius: 6.88px;
+        }
+
+        .cards_right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 8px 0;
+            margin-left: 20px;
+            flex: 1;
+
+            .title_cards {
+                color: #101010;
+                font-family: PingFang SC;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            .share_btn {
+                width: 71px;
+                height: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #FFEAF2;
+                border-radius: 10px;
+
+                .share_icon {
+                    width: 24px;
+                    height: 24px;
+                }
+
+                .share_text {
+                    color: #F9367E;
+                    font-family: PingFang SC;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+
+
+        .cards_right_left {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .star_icon {
+                width: 19px;
+                height: 16px;
+            }
+
+            .number {
+                color: #999;
+                font-family: PingFang SC;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+}
+
+.label_view_list {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+
+    .top_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .top_text {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            font-size: 18px;
+            font-weight: 700;
+            justify-content: space-between;
+        }
+
+        .deleted_icon {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .grid_content {
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        grid-template-columns: 120px 120px 120px;
+        margin-top: 8px;
+    }
+
+    .video_cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+        margin-top: 10px;
+
+        .cover {
+            width: 110px;
+            aspect-ratio: 104/140;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            -webkit-transform: rotate(0deg);
+        }
+
+        .cover_text {
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            color: #666;
+            display: -webkit-box;
+            font-size: 12px;
+            margin-top: 6px;
+            overflow: hidden;
+            width: 100%;
+            margin-top: 8px;
+        }
+    }
+
+}

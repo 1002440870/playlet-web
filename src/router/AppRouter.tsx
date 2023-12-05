@@ -1,6 +1,7 @@
 import useScreens from "@/hooks/useScreens";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import enUS from 'antd-mobile/es/locales/en-US'
+import zhHK from 'antd-mobile/es/locales/zh-HK'
 import { ConfigProvider } from "antd-mobile";
 import vConsole from "vconsole";
 import { AliveScope } from 'react-activation';
@@ -16,7 +17,7 @@ const AppRouter = () => {
 
     return (
         <div className={styles.App}>
-            <ConfigProvider locale={enUS}>
+            <ConfigProvider locale={zhHK}>
                 <AliveScope>
                     <Suspense fallback={<PageLoading />}>
                         <RouterProvider router={stackRouter} />

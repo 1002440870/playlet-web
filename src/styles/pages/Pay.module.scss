@@ -1,0 +1,275 @@
+.container {
+    width: 100%;
+    height: calc(100% - 64px);
+    background-color: #fff;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 0 16px;
+
+    .configs_text {
+        color: #333;
+        font-family: Roboto;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 44px;
+        text-transform: capitalize;
+    }
+
+    .config_list {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        margin-top: 10px;
+
+        .config_cards {
+            width: 175px;
+            height: 80px;
+            border-radius: 7px;
+            border: 1px solid #F3F3F3;
+            background: #F8F8F8;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+            position: relative;
+
+            .select_ed {
+                position: absolute;
+                right: 11px;
+                top: 6px;
+                width: 16px;
+                height: 16px;
+            }
+
+            .money_info {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .me_coin {
+                    width: 24px;
+                    height: 24px;
+                }
+
+                .amount {
+                    color: #7B1C46;
+                    font-family: Roboto;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 18px;
+                    letter-spacing: -0.078px;
+                }
+            }
+
+            .free_bonus {
+                color: #7B1C46;
+                text-align: center;
+                font-family: Roboto;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 18px;
+                margin-top: 5px;
+                letter-spacing: -0.078px;
+            }
+        }
+    }
+}
+
+.coins_configs {
+    margin-top: 50px;
+}
+
+.active_index {
+    border: 1px solid var(---, #F9367E) !important;
+}
+
+.exp {
+    align-items: center;
+    background-color: #EF64A7;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    color: #fff;
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    position: absolute;
+    left: -1px;
+    top: -5px;
+    width: 50px;
+    height: 15px;
+}
+
+
+
+.pay_list_view {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+    .top_view {
+        color: #333;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .google_pay_view {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+
+        .pay_method_left {
+            display: flex;
+            align-items: center;
+
+            .google_pay_icon {
+                width: 46px;
+                height: 24px;
+            }
+
+            .google_pay_text {
+                color: #000;
+                text-align: center;
+                font-family: Roboto;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-left: 10px;
+            }
+        }
+
+        .select_ed {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+
+.pay_list_content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+
+    p {
+        color: #999;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        margin-top: 3px !important;
+
+        span {
+            color: #F9367E;
+        }
+    }
+
+}
+
+.pay_list_two_content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+
+    p {
+        color: #999;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        margin-top: 3px !important;
+
+        span {
+            color: #333;
+            font-family: Roboto;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%;
+        }
+    }
+}
+
+.foot_view {
+    width: 375px;
+    height: 62px;
+    box-shadow: 0px -3px 4px 0px rgba(255, 187, 187, 0.10);
+    background: #FFF;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .foot_left {
+        display: flex;
+        flex-direction: column;
+
+        .money_view {
+            display: flex;
+            align-items: center;
+
+            .symle {
+                color: var(---, #F9367E);
+                font-family: Roboto;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 500;
+            }
+
+            .amount {
+                color: var(---, #F9367E);
+                font-family: Roboto;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                margin-left: 3px;
+            }
+        }
+
+
+    }
+
+    .total {
+        color: #999;
+        font-family: Roboto;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+
+}
+
+.pay_btn {
+    display: flex;
+    padding: 10px 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 75px;
+    background: var(---, linear-gradient(90deg, #FF504F 0%, #EC04D5 97.14%));
+    box-shadow: 0px 4px 4px 0px rgba(241, 20, 187, 0.32);
+
+    .pay_btn_text {
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.3px;
+        text-transform: capitalize;
+    }
+}
