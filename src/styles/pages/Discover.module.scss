@@ -3,7 +3,7 @@
     height: 100%;
     padding: 0 16px;
     overflow-x: scroll;
-    background: #000;
+    background: linear-gradient(175deg, #FDEDE0 4.38%, #FAE7FA 33.96%, #F1EFFC 64.65%, rgba(241, 239, 252, 0.00) 94.55%);
 }
 
 .search_view {
@@ -14,7 +14,7 @@
     width: 100%;
     z-index: 1;
     height: 60px;
-    background: #000;
+    background-color: #FDEDE0;
 
     .logo {
         width: 50px;
@@ -22,8 +22,8 @@
     }
 
     .search_area {
-        background-color: #252525;
-        width: 290px;
+        background-color: #fff;
+        width: 250px;
         height: 39px;
         margin-left: 20px;
         border-radius: 52px;
@@ -37,7 +37,7 @@
         }
 
         .text {
-            color: #999;
+            color: #666;
             font-family: PingFang SC;
             font-size: 14px;
             font-style: normal;
@@ -50,4 +50,8 @@
 
 .diy_page_view {
     padding-top: 55px;
+}
+
+.search_gift{
+    margin-left: 10px;
 }

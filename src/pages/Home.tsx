@@ -6,9 +6,7 @@ const Home = () => {
     return (
         <div className={styles.root}>
             <Outlet />
-            <div className={styles.footer}>
-                <TabRoutes />
-            </div>
+            <TabRoutes />
         </div>
     )
 }

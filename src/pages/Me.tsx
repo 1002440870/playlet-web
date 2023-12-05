@@ -1,5 +1,7 @@
 import PageLayout from "@/components/PageLayout";
+import { useRouteNavigate } from "@/hooks/useRouteNavigate";
 import styles from "@/styles/pages/Me.module.scss";
+import SCREEN from "@/utils/router";
 import { Image } from "antd-mobile";
 
 const MemberInfo = () => {
@@ -43,18 +45,44 @@ const RechangeCard = () => {
 }
 
 const MenuList = () => {
+    const { navigate } = useRouteNavigate();
+
     const menuList = [
-        { title: "Earn Rewards", icon: require("@/assets/gift.png"), className: styles.gift },
-        { title: "My List", icon: require("@/assets/mylist.png"), className: styles.mylist },
-        { title: "Feedback", icon: require("@/assets/question.png"), className: styles.question },
-        { title: "Language", icon: require("@/assets/language.png"), className: styles.language },
-        { title: "Setting", icon: require("@/assets/setting.png"), className: styles.setting },
+        {
+            title: "Earn Rewards",
+            icon: require("@/assets/gift.png"),
+            className: styles.gift,
+            path: SCREEN.Sign,
+        },
+        {
+            title: "My List", icon: require("@/assets/mylist.png"),
+            className: styles.mylist,
+            path: SCREEN.MyList
+        },
+        {
+            title: "Feedback",
+            icon: require("@/assets/question.png"),
+            className: styles.question,
+            path: SCREEN.Feedback,
+        },
+        {
+            title: "Language",
+            icon: require("@/assets/language.png"),
+            className: styles.language,
+            path: "",
+        },
+        {
+            title: "Setting",
+            icon: require("@/assets/setting.png"),
+            className: styles.setting,
+            path: SCREEN.Setting
+        },
     ]
 
     return (
         <div className={styles.menu_list}>
             {menuList.map((item, index) => (
-                <div className={styles.menu_card} key={index}>
+                <div className={styles.menu_card} key={index} onClick={() => navigate(item.path)}>
                     <div className={styles.menu_card_left}>
                         <Image src={item.icon} className={item.className} />
                         <div className={styles.menu_text}>{item.title}</div>
@@ -68,7 +96,7 @@ const MenuList = () => {
 
 const Me = () => {
     return (
-        <PageLayout>
+        <PageLayout hideHeader={true}>
             <div className={styles.container}>
                 <MemberInfo />
                 <RechangeCard />

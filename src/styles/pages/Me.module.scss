@@ -2,6 +2,7 @@
     width: 100%;
     height: 100%;
     padding: 20px 15px;
+    background: linear-gradient(175deg, #FDEDE0 4.38%, #FAE7FA 33.96%, #F1EFFC 64.65%, rgba(241, 239, 252, 0.00) 94.55%);
 }
 
 .user_view {
@@ -16,6 +17,8 @@
         .user_icon {
             width: 60px;
             height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
         }
 
         .user_info {
@@ -24,7 +27,7 @@
             margin-left: 10px;
 
             .nickname {
-                color: #fff;
+                color: #101010;
                 font-family: Inter;
                 font-size: 22px;
                 font-style: normal;
@@ -45,7 +48,7 @@
 .sign_btn {
     width: 84px;
     height: 30px;
-    border: 1px solid #fff;
+    background: linear-gradient(93deg, #FF84A9 2.11%, #FF6696 97.88%);
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -61,7 +64,7 @@
 
 .rechange_view {
     height: 105px;
-    background-color: #222;
+    background-color: #fff;
     margin-top: 15px;
     border-radius: 10px;
     box-shadow: 0px 2px 5px 0px rgba(255, 187, 187, 0.10);
@@ -75,7 +78,7 @@
     padding-bottom: 10px;
 
     .top_left {
-        color: #fff;
+        color: #333;
         font-family: Inter;
         font-size: 16px;
         font-style: normal;
@@ -106,7 +109,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #2c2c2c;
     padding-top: 10px;
 
     .money_left {
@@ -119,7 +121,7 @@
         }
 
         .money {
-            color: #fff;
+            color: #333;
             text-align: center;
             font-family: PingFang HK;
             font-size: 18px;
@@ -144,18 +146,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(---, linear-gradient(90deg, #FF504F 0%, #EC04D5 97.14%));
+    background: linear-gradient(93deg, #FF84A9 2.11%, #FF6696 97.88%);
 }
 
 .menu_list {
     display: flex;
     flex-direction: column;
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 10px 0;
+    border-radius: 10px;
 
     .menu_card {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 40px;
+        padding: 12px;
 
         .menu_card_left {
             display: flex;
@@ -163,14 +169,14 @@
         }
 
         .menu_text {
-            color: #fff;
+            color: #333;
             font-family: Roboto;
             font-size: 16px;
             font-weight: 400;
             margin-left: 15px;
         }
 
-        .more_icon{
+        .more_icon {
             width: 12px;
             height: 12px;
         }

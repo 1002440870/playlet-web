@@ -7,9 +7,13 @@ import { Image } from "antd-mobile";
 import SharePopup from "@/components/popup/SharePopup";
 import videojs from "video.js";
 import classNames from "classnames";
+import { useRouteNavigate } from "@/hooks/useRouteNavigate";
+import SCREEN from "@/utils/router";
+import KeepAlive from "react-activation";
 
 
 const Explore = () => {
+    const { navigate } = useRouteNavigate();
     const videoRef: any = useRef(undefined);
     const [hasLove, setHasLove] = useState(false);
     const [hasStar, setHasStar] = useState(false);
@@ -41,13 +45,13 @@ const Explore = () => {
     }
 
     return (
-        <PageLayout>
+        <PageLayout hideHeader={true}>
             <div className={styles.container}>
                 <VideoPlayer
                     className={styles.video_container}
                     src={"https://res.goodreels.com/mts/books/092/31000571092/227602/1f28743419d92cbaa8d9ff01100dc62a.mp4"}
                     controls={false}
-                    autoplay={true}
+                    autoplay={false}
                     loop={false}
                     muted={false}
                     onMounted={(event) => onVideoMounted(event)}
@@ -91,7 +95,7 @@ const Explore = () => {
                     <div className={styles.time_line}>
                         <div className={styles.time_current} style={{ width: `${playPercent}%` }}></div>
                     </div>
-                    <div className={styles.bottom}>
+                    <div className={styles.bottom} onClick={() => navigate(SCREEN.Details)}>
                         <div className={styles.bottom_left}>
                             <Image src={require("@/assets/video/more_video.png")} className={styles.more_video} />
                             <div className={styles.more_video_text}>Total 80 Episodes</div>

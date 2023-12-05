@@ -11,20 +11,3 @@
         }
     }
 }
-
-.footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: block;
-    align-items: center;
-    width: 100%;
-    padding: 10px 0;
-    font-weight: 600;
-    height: 64px;
-    z-index: 1000;
-    box-shadow: var(--my-shadow);
-    background: #000;
-    border-top: 1px solid #1f1f1f;
-}

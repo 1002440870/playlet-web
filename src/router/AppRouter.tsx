@@ -5,8 +5,10 @@ import { ConfigProvider } from "antd-mobile";
 import vConsole from "vconsole";
 import { AliveScope } from 'react-activation';
 import styles from "@/styles/App.module.scss";
+import { Suspense } from "react";
+import PageLoading from "@/components/PageLoading";
 
-// new vConsole({ theme: "dark" });
+new vConsole({ theme: "dark" });
 
 const AppRouter = () => {
     const { screens } = useScreens();
@@ -16,7 +18,9 @@ const AppRouter = () => {
         <div className={styles.App}>
             <ConfigProvider locale={enUS}>
                 <AliveScope>
-                    <RouterProvider router={stackRouter} />
+                    <Suspense fallback={<PageLoading />}>
+                        <RouterProvider router={stackRouter} />
+                    </Suspense>
                 </AliveScope>
             </ConfigProvider>
         </div>

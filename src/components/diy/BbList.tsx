@@ -1,13 +1,18 @@
 import styles from "./styles/BbList.module.scss";
 import { Image } from "antd-mobile";
 
-const BbList = () => {
+type BbListProps = {
+    hasLabel?: boolean, // 是否显示Label
+}
+
+const BbList = (props: BbListProps) => {
+    const { hasLabel } = props;
 
     return (
         <div className={styles.container}>
-            <div className={styles.top_label}>
+            {hasLabel && <div className={styles.top_label}>
                 <div className={styles.left}>You Might Like</div>
-            </div>
+            </div>}
             <div className={styles.walf_view}>
                 {Array.from(Array(20)).map((item, index) => (
                     <div key={index} className={styles.walf_card}>
